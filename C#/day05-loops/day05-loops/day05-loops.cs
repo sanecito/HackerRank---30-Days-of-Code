@@ -1,4 +1,4 @@
-﻿/* Coded by Scott Anecito on 2016/08/24
+﻿/* Coded by Scott Anecito on 2016/08/27
  * Code provided to add to Scott's code portfoilo
  * Copying this code to use on HackerRank is considered
  * cheating and this code should only be used to help understand
@@ -16,18 +16,9 @@ class Solution
     {
         int N = Convert.ToInt32(Console.ReadLine());
 
-        if (N % 2 == 1)
+        for (int i = 1; i < 11; ++i)
         {
-            Console.WriteLine("Weird");
-        }
-        else if(2 <= N && N <= 5) {
-            Console.WriteLine("Not Weird");
-        }
-        else if(6 <= N && N <= 20) {
-            Console.WriteLine("Weird");
-        }
-        else if(N >= 20) {
-            Console.WriteLine("Not Weird");
+            Console.WriteLine(N + " x " + i + " = " + N * i);
         }
     }
 }
